@@ -60,6 +60,8 @@ def delete_stock(request):
 	ticker = Stock.objects.all()
 	return render(request, 'delete_stock.html', {'ticker':ticker})
 
+def bucket(request):
+	return render(request, 'bucket.html', {})
 
 
 
